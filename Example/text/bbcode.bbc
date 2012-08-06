@@ -1,0 +1,22 @@
+[center][h2][color=maroon]Test[/color][/h2][/center]
+
+Hello to [b]all[/b], [i]how are you [q]today?[/q][/i]
+
+[h3]Heading 3[/h3]
+
+[img=img/town.jpg]Sample[/img]
+[url=http://blog.hizup.com]URL HERE[/url]
+[q]Here's an quote[/q]
+[blockquote][color=gray]Very nice day, isn't?[/color][/blockquote]
+[code]printf('Hello World');[/code]
+
+[center][size=24]Hi guys![/size][/center]
+
+[email=ph7software@gmail.com]My eMail[/email]
+
+[ul]
+  [ol]Hello[/ol]
+  [ol]Yes[/ol]
+  [ol]Yeah[/ol]
+  [ol]...[/ol]
+[/ul]
