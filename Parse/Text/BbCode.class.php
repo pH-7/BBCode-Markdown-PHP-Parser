@@ -45,6 +45,8 @@ class BbCode extends Code {
     }
 
     /**
+     * Parse text and processing
+     *
      * @access protected
      * @return void
      */

@@ -59,12 +59,14 @@ abstract class Code {
     protected function convert() {
         // Convert Windows (\r\n) to Unix (\n)
         $this->sText = str_replace("\r\n", "\n", $this->sText);
-        
+
         // Convert Macintosh (\r) to Unix (\n)
         $this->sText = str_replace("\r", "\n", $this->sText);
     }
 
     /**
+     * Displaying the text
+     *
      * @access public
      * @return string The code parsed
      */
