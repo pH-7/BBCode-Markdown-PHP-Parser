@@ -1,15 +1,18 @@
 <?php
 /**
- * @title BbCode Markup Language
+ * @title            BbCode Markup Language
  *
  * @author           Pierre-Henry Soria <ph7software@gmail.com>
- * @copyright        (c) 2012, Pierre-Henry Soria. All Rights Reserved.
+ * @copyright        (c) 2012-2013, Pierre-Henry Soria. All Rights Reserved.
  * @license          Lesser General Public License; See LICENSE.txt in the root directory.
  * @link             http://github.com/pH-7
  * @package          PH7
  * @version          1.0
  */
+
 namespace PH7;
+define('PH7', true);
+
 use PH7\Parse\Text as Txt;
 
 require '_autoload.php';

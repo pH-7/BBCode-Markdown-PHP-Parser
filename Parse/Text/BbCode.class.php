@@ -1,26 +1,28 @@
 <?php
 /**
- * @title BBCode Class
- *
- * BBCode Markup Parser with HTML5 support.
+ * @title            BBCode Class
+ * @desc             BBCode Markup Parser with HTML5 support.
  *
  * @author           Pierre-Henry Soria <ph7software@gmail.com>
- * @copyright        (c) 2012, Pierre-Henry Soria. All Rights Reserved.
+ * @copyright        (c) 2012-2013, Pierre-Henry Soria. All Rights Reserved.
  * @license          Lesser General Public License; See LICENSE.txt in the root directory.
  * @link             http://github.com/pH-7
  * @package          PH7 / Parse / Text
- * @version          0.7
+ * @version          0.8
  */
 
 namespace PH7\Parse\Text;
+defined('PH7') or exit('Restricted access');
 
-class BbCode extends Code {
+class BbCode extends Code
+{
 
     /**
      * @access public
      * @param string $sText
      */
-    public function __construct($sText) {
+    public function __construct($sText)
+    {
         $this->sText = $sText;
         parent::__construct();
     }
@@ -29,7 +31,8 @@ class BbCode extends Code {
      * @access public
      * @return string The code parsed
      */
-    public function __toString() {
+    public function __toString()
+    {
         return $this->sText;
     }
 
@@ -39,7 +42,8 @@ class BbCode extends Code {
      * @access protected
      * @return void
      */
-    protected function run() {
+    protected function run()
+    {
         $this->paragraph();
         $this->parse();
     }
@@ -50,7 +54,8 @@ class BbCode extends Code {
      * @access protected
      * @return void
      */
-    protected function parse() {
+    protected function parse()
+    {
         // [h]eading
         $this->sText = preg_replace('/\[(h\d{1,6})](.+?)\[\/(h\d{1,6})]/i', '<\1>\2</\3>', $this->sText);
 
